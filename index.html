@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!-- style -->
+    <link rel="stylesheet" href="/input.css">
+    <!-- favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <!-- javaScript -->
+    <script defer src="app.js" type="module"></script>
+    <title>Document</title>
+</head>
+
+<body
+    class="font-popins bg-[url('images/bg-intro-mobile.png')] bg-clr_Primary bg-cover lg:bg-[url('images/bg-intro-desktop.png')]">
+    <!-- main -->
+    <div class="main lg:flex lg:w-[90%] lg:mx-auto lg:justify-center lg:items-center lg:mt-[50px] md:w-[80%] md:mx-auto">
+        <!-- section-1 -->
+        <div class="lg:mb-[120px] lg:w-[50%]">
+            <!-- title -->
+            <div
+                class=" text-center text-[29px] font-semibold text-white w-[70%] mx-auto pt-[90px] lg:text-[55px] lg:w-[80%] lg:leading-[60px] lg:mx-8 lg:text-left">
+                Learn to code by watching others
+            </div>
+
+            <!--descriptions -->
+            <div class="text-white text-center px-[30px] pt-[20px] lg:text-left">
+                See how experienced developers solve problems in real-time. Watching scripted tutorials is great,
+                but understanding how developers think is invaluable.
+            </div>
+        </div>
+
+        <!-- section-2 -->
+        <div class="lg:w-[50%]">
+            <!-- button -->
+            <a href="#">
+                <div
+                    class="bg-clr_Accent w-[85%] mt-[50px] mx-auto py-[20px] px-[50px] text-center text-white rounded-lg drop-shadow-xl">
+                    <span class="font-bold">Try it free 7 days</span>
+                    then $20/mo. thereafter
+                </div>
+            </a>
+
+            <!-- form -->
+            <form action="/" method="get" id="form"
+                class="bg-white w-[90%] mx-auto rounded-lg py-[30px] text-center mt-[20px] mb-[80px] lg:w-[85%] relative">
+
+                <!-- first-name -->
+                <input
+                    class="shadow appearance-none border rounded w-[85%] py-[10px] px-3 leading-tight focus:outline-none focus:shadow-outline placeholder:text-clr_Netural_1 placeholder:font-semibold placeholder:text-sm placeholder:opacity-80"
+                    id="firstName" type="text" placeholder="First Name">
+
+                <!-- warning icon -->
+                <img src="images/icon-error.svg" alt="" class="iconfName absolute top-[8%] left-[80%] lg:left-[85%] invisible">
+
+                <!-- warning-text -->
+                <div
+                    class="fNameWarning w-[84%] mx-auto text-red-500 italic text-[14px] text-right mb-[20px]  invisible">
+                    First Name cannot be empty
+                </div>
+
+                <!-- Last-name -->
+                <input
+                    class="shadow appearance-none border rounded w-[85%] py-[10px] px-3 leading-tight focus:outline-none focus:shadow-outline placeholder:text-clr_Netural_1 placeholder:font-semibold placeholder:text-sm placeholder:opacity-80"
+                    id="lastName" type="text" placeholder="Last Name">
+
+                <!-- warning icon -->
+                <img src="images/icon-error.svg" alt="" class=" iconlName absolute top-[25.5%] lg:top-[26%] left-[80%] lg:left-[85%] invisible">
+
+                <!-- warning-text -->
+                <div
+                    class="lNameWarning w-[84%] mx-auto text-red-500 italic text-[14px] text-right mb-[20px]  invisible">
+                    Last Name cannot be empty
+                </div>
+
+                <!-- Email -->
+                <input
+                    class="shadow appearance-none border rounded w-[85%] py-[10px] px-3 leading-tight focus:outline-none focus:shadow-outline placeholder:text-clr_Netural_1 placeholder:font-semibold placeholder:text-sm placeholder:opacity-80"
+                    id="email" type="text" placeholder="Email Address">
+
+                <!-- warning icon -->
+                <img src="images/icon-error.svg" alt="" class="iconEmail absolute top-[42.5%] lg:top-[44%] left-[80%] lg:left-[85%] invisible">
+
+                <!-- warning-text -->
+                <div
+                    class="emailWarning w-[84%] mx-auto text-red-500 italic text-[14px] text-right mb-[20px]  invisible">
+                    Looks like this is not an email
+                </div>
+
+                <!-- Password -->
+                <input
+                    class="shadow appearance-none border rounded w-[85%] py-[10px] px-3 leading-tight focus:outline-none focus:shadow-outline placeholder:text-clr_Netural_1 placeholder:font-semibold placeholder:text-sm placeholder:opacity-80"
+                    id="password" type="password" placeholder="Password">
+
+                    <!-- warning icon -->
+                <img src="images/icon-error.svg" alt="" class="iconPassword absolute top-[59.5%] lg:top-[62%] left-[80%] lg:left-[85%] invisible">
+
+                <!-- warning-text -->
+                <div
+                    class="passwordWarning w-[84%] mx-auto text-red-500 italic text-[14px] text-right mb-[20px]  invisible">
+                    password cannot be empty
+                </div>
+
+                <!-- button -->
+
+                <button type="submit"
+                    class="btn bg-clr_Secondary w-[85%] mx-auto py-[15px] px-[50px] text-center text-white rounded-lg drop-shadow-xl font-medium lg:hover:opacity-80">
+                    CLAIM YOUR FREE TRIAL
+                </button>
+
+
+                <!-- policy -->
+                <div class="text-[12px] w-[80%] mx-auto text-clr_Netural_1 opacity-70 mt-[10px]">
+                    By clicking the button, you are agreeing to our
+                    <a href="#" class="text-red-600">Terms and Services</a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+</body>
+
+</html>
